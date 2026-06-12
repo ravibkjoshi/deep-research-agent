@@ -57,5 +57,67 @@ deep-research-agent/
 ├── .env
 ├── .gitignore
 ├── agent.py
-├── readme.md
+├── README.md
 └── requirements.txt
+```
+
+## How to Run This Project
+
+### 1. Clone the repository
+
+```bash
+git clone https://github.com/ravibkjoshi/deep-research-agent.git
+cd deep-research-agent
+```
+
+### 2. Create and activate a virtual environment
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+On Windows, use:
+
+```bash
+.venv\Scripts\activate
+```
+
+### 3. Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Create a `.env` file
+
+Create a file named `.env` in the root of the project.
+
+Add your API keys:
+
+```env
+GOOGLE_API_KEY=your_google_gemini_api_key_here
+TAVILY_API_KEY=your_tavily_api_key_here
+```
+
+Do not commit your real `.env` file to GitHub.
+
+### 5. Run the agent
+
+```bash
+python3 agent.py
+```
+
+The app will ask:
+
+```text
+What do you want to research?
+```
+
+Enter a research topic, for example:
+
+```text
+The Future of AI Agents
+```
+
+The agent will then return a structured research summary using Google Gemini, LangChain, and Tavily Search.
