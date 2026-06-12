@@ -98,7 +98,7 @@ Add your API keys:
 ```env
 GOOGLE_API_KEY=your_google_gemini_api_key_here
 TAVILY_API_KEY=your_tavily_api_key_here
-LANGSMITH_API_KEY="your_langsmith_api_key" 
+LANGSMITH_API_KEY="your_langsmith_api_key_here" 
 ```
 
 Do not commit your real `.env` file to GitHub.
